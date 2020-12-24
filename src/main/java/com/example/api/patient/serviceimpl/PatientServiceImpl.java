@@ -11,14 +11,13 @@ import com.example.api.patient.service.IPatientService;
 
 @Service
 public class PatientServiceImpl implements IPatientService {
-
 	
 	@Autowired
 	private PatientRepo patientRepo;
 	
 	@Override
-	public String submitData(List<Patient> patient) {
-		patient.forEach(p->patientRepo.save(p));
+	public String saveData(List<Patient> patientList) {
+		patientList.forEach(p->patientRepo.save(p));
 		return "Patient Data submitted successfully";
 	}
 

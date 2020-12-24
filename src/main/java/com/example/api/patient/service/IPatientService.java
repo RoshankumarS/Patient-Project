@@ -6,5 +6,5 @@ import com.example.api.patient.pojo.Patient;
 
 public interface IPatientService {
 
-	public String submitData(List<Patient> patient);
+	public String saveData(List<Patient> patientList);
 }

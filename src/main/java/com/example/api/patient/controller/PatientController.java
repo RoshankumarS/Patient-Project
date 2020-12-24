@@ -16,9 +16,9 @@ public class PatientController {
 	@Autowired
 	private IPatientService patientServices;
 	
-	@PostMapping(path = "/submit", consumes="application/json")
-	public String submitPatientData(@RequestBody ArrayList<Patient> patient) {
-		return patientServices.submitData(patient);
+	@PostMapping(path = "/save", consumes="application/json")
+	public String savePatientData(@RequestBody ArrayList<Patient> patientList) {
+		return patientServices.saveData(patientList);
 	}
 
 }
