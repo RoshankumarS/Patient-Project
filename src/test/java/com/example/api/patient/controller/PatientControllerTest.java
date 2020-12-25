@@ -36,7 +36,7 @@ public class PatientControllerTest {
 	private Patient getPatientData() {
 		Patient patientData = new Patient();
 		patientData.setName("abc");
-		patientData.setDob("2000-12-30");
+		patientData.setDob("23-02-2020");
 		patientData.setPhone("8888888888");
 		return patientData;
 	}

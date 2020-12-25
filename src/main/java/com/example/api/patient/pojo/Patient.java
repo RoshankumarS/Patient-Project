@@ -1,5 +1,6 @@
 package com.example.api.patient.pojo;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -11,8 +12,12 @@ public class Patient {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
+	
+	@Column(nullable = false, length = 40)
 	private String name;
+	
 	private String dob;
+	
 	private String phone;
 	
 	public int getId() {
