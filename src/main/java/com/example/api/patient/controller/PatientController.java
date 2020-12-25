@@ -17,8 +17,7 @@ public class PatientController {
 	private IPatientService patientServices;
 	
 	@PostMapping(path = "/save", consumes="application/json")
-	public String savePatientData(@RequestBody ArrayList<Patient> patientList) {
+	public String savePatientData(@RequestBody ArrayList<Patient> patientList){
 		return patientServices.saveData(patientList);
 	}
-
 }
